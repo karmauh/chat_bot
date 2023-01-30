@@ -1,0 +1,130 @@
+User: Napisz test
+Bot: 
+
+1.
+
+What is the capital of France?
+
+a. Paris
+
+b. London
+
+c. Madrid
+
+d. Rome
+
+2.
+
+Which of the following is not a country in Europe?
+
+a. France
+
+b. Spain
+
+c. Portugal
+
+d. Australia
+
+3.
+
+What is the official language of France?
+
+a. French
+
+b. English
+
+c. Spanish
+
+d. Italian
+
+4.
+
+What is the currency of France?
+
+a. Euro
+
+b. Dollar
+
+c. Pound
+
+d. Franc
+
+5.
+
+What is the population of France?
+
+a. 60 million
+
+b. 66 million
+
+c. 72 million
+
+d. 78 million
+
+6.
+
+What is the land area of France?
+
+a. 547,030 square kilometers
+
+b. 640,680 square kilometers
+
+c. 643,801 square kilometers
+
+d. 751,500 square kilometers
+
+7.
+
+What is the highest point in France?
+
+a. Mont Blanc
+
+b. Mount Everest
+
+c. The Eiffel Tower
+
+d. The Statue of Liberty
+
+8.
+
+What is the lowest point in France?
+
+a. The English Channel
+
+b. The Mediterranean Sea
+
+c. The Atlantic Ocean
+
+d. Lake Geneva
+
+9.
+
+What river runs through France?
+
+a. The Seine
+
+b. The Thames
+
+c. The Danube
+
+d. The Nile
+
+10.
+
+What are the colors of the French flag?
+
+a. Blue, white, and red
+
+b. Red, white, and blue
+
+c. Blue, red, and white
+
+d. White, blue, and red
+User: Npisz jakieœ mêskie imie.
+Bot: 
+
+Adam
+User: Napisz "test".
+Bot: 
+
+test

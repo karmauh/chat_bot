@@ -1,6 +1,8 @@
 # chat_bot
 simple chat bot with OpanAI
   
+work in progress....
+  
   
   
   

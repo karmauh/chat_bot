@@ -1,2 +1,5 @@
+#api key
 api_key.env
+
+#virtaul environment
 env/

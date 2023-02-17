@@ -1,8 +1,10 @@
 #api key
 api_key.env
 
+
 #conversation log
 conversation_log.txt
+
 
 #virtaul environment
 env/

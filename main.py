@@ -6,6 +6,7 @@ with open('api_key.env', 'r') as f:
         ai.api_key = api_key
        
        
+       
 if __name__ == "__main__":
     root = tk.Tk()
     app = App(root)

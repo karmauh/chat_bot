@@ -18,6 +18,7 @@ class GUI:
         root.geometry(alignstr)
         root.resizable(width=False, height=False)
 
+        
         # User message label 'User:'
         label=tk.Label(root)
         ft = tkFont.Font(family='Times',size=10)
@@ -35,7 +36,12 @@ class GUI:
         entry["justify"] = "left"
         entry.place(x=50,y=10,width=406,height=30)
         self.entry = entry
+        
+        
+        # Bind the <Return> key to the send_message_to_bot function
+        entry.bind("<Return>", lambda event: self.send_message_to_bot())
 
+        
         # Send user message button
         send_button=tk.Button(root)
         send_button["bg"] = "#f0f0f0"
@@ -46,6 +52,7 @@ class GUI:
         send_button["text"] = "SEND"
         send_button.place(x=460,y=10,width=60,height=30)
         send_button["command"] = self.send_message_to_bot
+        
         
         # Exit button
         exit_button=tk.Button(root)
@@ -58,15 +65,15 @@ class GUI:
         exit_button.place(x=530,y=10,width=60,height=30)
         exit_button["command"] = root.quit
         
+        
         # Bot message
         bot_label=tk.Label(root)
         ft = tkFont.Font(family='Times',size=12)
         bot_label["font"] = ft
         bot_label["fg"] = "#333333"
         bot_label["justify"] = "left"
-        bot_label.place(x=10,y=50,width=406,height=50)
+        bot_label.place(x=10,y=50,width=406,height=100)
         self.bot_label = bot_label
-
 
 
 class App(GUI):
@@ -96,14 +103,13 @@ class App(GUI):
                 
                 # Get the bot response
                 bot_message = response['choices'][0]['text']
-                
-                # Print the bot response
                 print("Bot: "+bot_message)
                 
                 # Bot message wirte to file
                 log_file.write('Bot: ' + bot_message + '\n')
                 
                 self.bot_label["text"] = bot_message
-            except Exception as e:
-                print('Network Error', e)
-                log_file.write('Bot: Network Error\n')
+            except (KeyError) as e:
+                print('Error occurred while making request to OpenAI API: ', e)
+                log_file.write('Bot: Error occurred while making request to OpenAI API\n')
+                exit(1)

@@ -89,6 +89,7 @@ class App(GUI):
                 # Bot message wirte to file
                 log_file.write('Bot: ' + bot_message)
                 self.bot_label['text'] = bot_message.strip()
+                
             except (KeyError) as e:
                 print('Error occurred while making request to OpenAI API: ', e)
                 log_file.write('Bot: Error occurred while making request to OpenAI API\n')
